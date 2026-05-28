@@ -1,8 +1,4 @@
-type Task = {
-  title: string;
-  description: string;
-  isCompleted: boolean;
-};
+import type { Task } from "../task.type";
 
 export function TaskCard({ task }: { task: Task }) {
   return (

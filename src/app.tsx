@@ -1,30 +1,14 @@
-import { TaskCard } from "./task-card";
+import { TaskCard } from "./modules/task/components/task-card";
+import { dataTasks } from "./modules/task/task.data";
 
 export function App() {
   return (
     <div>
       <h1>Task Management</h1>
-      <TaskCard
-        task={{
-          title: "Breakfast",
-          description: "Porridge",
-          isCompleted: true,
-        }}
-      />
-      <TaskCard
-        task={{
-          title: "Lunch",
-          description: "Chicken soto",
-          isCompleted: true,
-        }}
-      />
-      <TaskCard
-        task={{
-          title: "Dinner",
-          description: "Fried rice",
-          isCompleted: false,
-        }}
-      />
+
+      {dataTasks.map((task) => {
+        return <TaskCard task={task} />;
+      })}
     </div>
   );
 }
