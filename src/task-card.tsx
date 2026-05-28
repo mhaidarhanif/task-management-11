@@ -1,11 +1,13 @@
 export function TaskCard() {
-  const title = "Dinner";
-  const description = "Fried rice";
+  const task = {
+    title: "Dinner",
+    description: "Fried rice",
+  };
 
   return (
     <div>
-      <h2>{title}</h2>
-      <p>{description}</p>
+      <h2>{task.title}</h2>
+      <p>{task.description}</p>
     </div>
   );
 }
