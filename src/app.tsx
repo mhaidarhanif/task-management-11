@@ -7,7 +7,7 @@ export function App() {
       <h1>Task Management</h1>
 
       {dataTasks.map((task) => {
-        return <TaskCard task={task} />;
+        return <TaskCard key={task.id} task={task} />;
       })}
     </div>
   );
