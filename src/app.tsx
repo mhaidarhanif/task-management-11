@@ -1,6 +1,5 @@
-import { TaskCard } from "./modules/task/components/task-card";
-import { dataTasks } from "./modules/task/task.data";
-import { Button } from "./components/ui/button";
+import { TaskCard } from "@/modules/task/components/task-card";
+import { dataTasks } from "@/modules/task/task.data";
 
 export function App() {
   return (

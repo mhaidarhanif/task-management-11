@@ -5,8 +5,8 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import type { Task } from "../task.type";
-import { TaskCheck } from "./task-check";
+import type { Task } from "@/modules/task/task.type";
+import { TaskCheck } from "@/modules/task/components/task-check";
 
 export function TaskCard({ task }: { task: Task }) {
   return (
