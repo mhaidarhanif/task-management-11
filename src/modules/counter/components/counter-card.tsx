@@ -1,11 +1,14 @@
-import { useState } from "react";
-
-import type { Count } from "@/modules/counter/counter.type";
 import { Button } from "@/components/ui/button";
+import type { Count } from "@/modules/counter/counter.type";
+import type { Dispatch, SetStateAction } from "react";
 
-export function CounterCard() {
-  const [count, setCount] = useState<Count>(0);
-
+export function CounterCard({
+  count,
+  setCount,
+}: {
+  count: Count;
+  setCount: Dispatch<SetStateAction<Count>>;
+}) {
   function handleIncrementCount() {
     setCount(count + 1);
   }
