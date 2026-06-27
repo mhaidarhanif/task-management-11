@@ -1,6 +1,6 @@
 import { TaskCard } from "@/modules/task/components/task-card";
 import { dataTasks } from "@/modules/task/task.data";
-import { CounterCard } from "@/modules/counter/components/counter-card";
+import { TaskWithCountCard } from "@/modules/counter/components/task-with-count-card";
 
 export function App() {
   return (
@@ -9,7 +9,7 @@ export function App() {
         Task Management
       </h1>
 
-      <CounterCard />
+      <TaskWithCountCard />
 
       <ul className="flex flex-col gap-4 p-4">
         {dataTasks.map((task) => {
